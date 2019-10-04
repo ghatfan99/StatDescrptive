@@ -121,47 +121,8 @@ $(document).ready(function () {
 </div>
 
 
-<div id="test-statistiques-descriptive" class="section level3">
-<h3>Test Statistiques descriptive</h3>
-<p>[x] select me</p>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Syntax</th>
-<th align="center">Description</th>
-<th align="right">Test Text</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Header</td>
-<td align="center">Title</td>
-<td align="right">Here’s this</td>
-</tr>
-<tr class="even">
-<td align="left">Paragraph</td>
-<td align="center">Text</td>
-<td align="right">And more</td>
-</tr>
-</tbody>
-</table>
-<dl>
-<dt>First Term</dt>
-<dd>This is the definition of the first term.
-</dd>
-<dt>Second Term</dt>
-<dd>This is one definition of the second term.
-</dd>
-<dd>This is another definition of the second term.
-</dd>
-</dl>
-<ul>
-<li>[x] Write the press release</li>
-<li><input type="checkbox"> Update the website</li>
-<li><input type="checkbox"> Contact the media</li>
-<li><input type="checkbox"> Contact the media</li>
-</ul>
-</div>
+<div id="test-statistiques-descriptive" class="section level1">
+<h1>Test Statistiques descriptive</h1>
 <div id="vrai-ou-faux" class="section level2">
 <h2>Vrai ou Faux</h2>
 <div id="les-lignes-de-commande-suivantes-affichent-le-vecteur-ligne" class="section level4">
@@ -170,25 +131,25 @@ $(document).ready(function () {
 <div id="vrai-ou-faux-et-pourquoi" class="section level4">
 <h4>[1] 1 2 3 4 5 : vrai ou faux et pourquoi ?</h4>
 <ol style="list-style-type: decimal">
-<li><input type="checkbox"> <code>(1,2,3,4,5)</code></li>
-<li><input type="checkbox"> <code>c(1,2,3,4,5)</code></li>
-<li><input type="checkbox"> <code>1:5</code></li>
-<li><input type="checkbox"> <code>1,5)</code></li>
-<li><input type="checkbox"> <code>rep(1,5)</code></li>
-<li><input type="checkbox"> <code>seq(1,5)</code></li>
-<li><input type="checkbox"> <code>cumsum(rep(1,5))</code></li>
-<li><input type="checkbox"> <code>(1,2,3,4,5)</code></li>
-<li><input type="checkbox"> <code>(1,2,3,4,5)</code></li>
-<li><input type="checkbox"> <code>(1,2,3,4,5)</code></li>
-<li><input type="checkbox"> <code>sort(seq(5,1,-1))</code></li>
-<li><input type="checkbox"> <code>for (i in 1:5){v[i] &lt;- i}</code></li>
-<li><input type="checkbox"> <code>v &lt;- rep(1,5); for (i in 1:5){v[i] &lt;- i}; v</code></li>
-<li><input type="checkbox"> <code>v &lt;- 1; for (i in 2:5){append(v,i)}; v</code></li>
-<li><input type="checkbox"> <code>v &lt;- 1; for (i in 2:5){v &lt;- append(v,i)}; v</code></li>
-<li><input type="checkbox"> <code>v &lt;- 1; for (i in 2:5){v &lt;- c(v,i)}; v</code></li>
-<li><input type="checkbox"> <code>v &lt;- 1; for (i in 2:5){v &lt;- rbind(v,i)}; v</code></li>
-<li><input type="checkbox"> <code>v &lt;- rep(1,5); while (i&lt;5){v[i] &lt;- i}; v</code></li>
-<li><input type="checkbox"> <code>v&lt;- 1; i&lt;-1; while (i&lt;5){i&lt;-i+1; v[i] &lt;- i}; v</code></li>
+<li>[ ] <code>(1,2,3,4,5)</code></li>
+<li>[ ] <code>c(1,2,3,4,5)</code></li>
+<li>[ ] <code>1:5</code></li>
+<li>[ ] <code>1,5)</code></li>
+<li>[ ] <code>rep(1,5)</code></li>
+<li>[ ] <code>seq(1,5)</code></li>
+<li>[ ] <code>cumsum(rep(1,5))</code></li>
+<li>[ ] <code>(1,2,3,4,5)</code></li>
+<li>[ ] <code>(1,2,3,4,5)</code></li>
+<li>[ ] <code>(1,2,3,4,5)</code></li>
+<li>[ ] <code>sort(seq(5,1,-1))</code></li>
+<li>[ ] <code>for (i in 1:5){v[i] &lt;- i}</code></li>
+<li>[ ] <code>v &lt;- rep(1,5); for (i in 1:5){v[i] &lt;- i}; v</code></li>
+<li>[ ] <code>v &lt;- 1; for (i in 2:5){append(v,i)}; v</code></li>
+<li>[ ] <code>v &lt;- 1; for (i in 2:5){v &lt;- append(v,i)}; v</code></li>
+<li>[ ] <code>v &lt;- 1; for (i in 2:5){v &lt;- c(v,i)}; v</code></li>
+<li>[ ] <code>v &lt;- 1; for (i in 2:5){v &lt;- rbind(v,i)}; v</code></li>
+<li>[ ] <code>v &lt;- rep(1,5); while (i&lt;5){v[i] &lt;- i}; v</code></li>
+<li>[ ] <code>v&lt;- 1; i&lt;-1; while (i&lt;5){i&lt;-i+1; v[i] &lt;- i}; v</code></li>
 </ol>
 </div>
 </div>
@@ -200,21 +161,22 @@ $(document).ready(function () {
 <div id="vrai-ou-faux-et-pourquoi-1" class="section level4">
 <h4>[1] 1 0.5 0.25 0.125 0.0625 : vrai ou faux et pourquoi ?</h4>
 <ol style="list-style-type: decimal">
-<li><input type="checkbox"> <code>2^-0:4</code></li>
-<li><input type="checkbox"> <code>2^(-0:4)</code></li>
-<li><input type="checkbox"> <code>2^-(0:4)</code></li>
-<li><input type="checkbox"> <code>2^(-(0:4))</code></li>
-<li><input type="checkbox"> <code>1/2^0:4</code></li>
-<li><input type="checkbox"> <code>1/2^(0:4)</code></li>
-<li><input type="checkbox"> <code>cumprod(rep(0.5,5))</code></li>
-<li><input type="checkbox"> <code>cumprod(c(1,rep(0.5,4)))</code></li>
-<li><input type="checkbox"> <code>v&lt;-1; for (i in 1:4){v &lt;- c(v,v/2)}; v</code></li>
-<li><input type="checkbox"> <code>v&lt;-rep(1,5); for (i in 0:4){v(i) &lt;- 2^(-i)}; v</code></li>
-<li><input type="checkbox"> <code>v&lt;-1; for (i in 0:4){v[i] &lt;- 1/2^i}; v</code></li>
-<li><input type="checkbox"> <code>v&lt;-1; for (i in 2:4){v[i] &lt;- 1/2^i}; v</code></li>
-<li><input type="checkbox"> <code>v&lt;-1; while (v&gt;0.1){v &lt;- v/2}; v</code></li>
-<li><input type="checkbox"> <code>x&lt;-1; v&lt;-x; while(x&gt;0.1){x&lt;-x/2; v&lt;-c(v,x)}; v</code></li>
+<li>[ ] <code>2^-0:4</code></li>
+<li>[ ] <code>2^(-0:4)</code></li>
+<li>[ ] <code>2^-(0:4)</code></li>
+<li>[ ] <code>2^(-(0:4))</code></li>
+<li>[ ] <code>1/2^0:4</code></li>
+<li>[ ] <code>1/2^(0:4)</code></li>
+<li>[ ] <code>cumprod(rep(0.5,5))</code></li>
+<li>[ ] <code>cumprod(c(1,rep(0.5,4)))</code></li>
+<li>[ ] <code>v&lt;-1; for (i in 1:4){v &lt;- c(v,v/2)}; v</code></li>
+<li>[ ] <code>v&lt;-rep(1,5); for (i in 0:4){v(i) &lt;- 2^(-i)}; v</code></li>
+<li>[ ] <code>v&lt;-1; for (i in 0:4){v[i] &lt;- 1/2^i}; v</code></li>
+<li>[ ] <code>v&lt;-1; for (i in 2:4){v[i] &lt;- 1/2^i}; v</code></li>
+<li>[ ] <code>v&lt;-1; while (v&gt;0.1){v &lt;- v/2}; v</code></li>
+<li>[ ] <code>x&lt;-1; v&lt;-x; while(x&gt;0.1){x&lt;-x/2; v&lt;-c(v,x)}; v</code></li>
 </ol>
+</div>
 </div>
 </div>
 

@@ -1,0 +1,76 @@
+---
+title: "QCM Statistique descriptive"
+author: "Ali Hajj Hassan, Hazem HASAN"
+date: "7 octobre 2019"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+
+
+## Vrai ou Faux
+#### Les lignes de commande suivantes affichent le vecteur ligne
+#### [1] 1 0.5 0.25 0.125 0.0625 : vrai ou faux et pourquoi ?
+1. [ ] `2^-0:4`
+```{r}
+2^-0:4
+```
+
+2. [ ] `2^(-0:4)`
+```{r}
+2^(-0:4)
+```
+3. [ ] `2^-(0:4)`
+```{r}
+2^-(0:4)
+```
+4. [ ] `2^(-(0:4))`
+```{r message=FALSE, warning=FALSE, paged.print=TRUE}
+2^(-(0:4))
+```
+5. [ ] `1/2^0:4`
+```{r}
+1/2^0:4
+```
+6. [ ] `1/2^(0:4)`
+```{r}
+1/2^(0:4)
+```
+7. [ ] `cumprod(rep(0.5,5))`
+```{r}
+cumprod(rep(0.5,5))
+```
+8. [ ] `cumprod(c(1,rep(0.5,4)))`
+```{r}
+cumprod(c(1,rep(0.5,4)))
+```
+9. [ ] `v<-1; for (i in 1:4){v <- c(v,v/2)}; v`
+```{r}
+v<-1; for (i in 1:4){v <- c(v,v/2)}; v
+```
+10. [ ] `v<-rep(1,5); for (i in 0:4){v(i) <- 2^(-i)}; v`
+```{r}
+#v<-rep(1,5); for (i in 0:4){v(i) <- 2^(-i)}; v
+#impossible de trouver la fonction "v<-"
+```
+11. [ ]  `v<-1; for (i in 0:4){v[i] <- 1/2^i}; v`
+```{r}
+v<-1; for (i in 0:4){v[i] <- 1/2^i}; v
+```
+12. [ ] `v<-1; for (i in 2:4){v[i] <- 1/2^i}; v`
+```{r}
+v<-1; for (i in 2:4){v[i] <- 1/2^i}; v
+```
+13. [ ] `v<-1; while (v>0.1){v <- v/2}; v`
+```{r}
+v<-1; while (v>0.1){v <- v/2}; v
+```
+14. [ ] `x<-1; v<-x; while(x>0.1){x<-x/2; v<-c(v,x)}; v`
+```{r}
+x<-1; v<-x; while(x>0.1){x<-x/2; v<-c(v,x)}; v
+```
