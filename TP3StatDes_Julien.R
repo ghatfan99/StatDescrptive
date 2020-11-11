@@ -50,3 +50,29 @@ barplot(poidstaille,main = 'Garçon, Filles', xlab = "nombre",
 ### 3.4
 # i, les marges
 frequences = addmargins(frequences)
+# ii, La serie de frequences garcons et de filles
+frequences[,5]
+# iii, distribution marginale de Y  
+frequences[3,]
+
+### 3.5 V de Cramer
+# statistique de khi2
+chisq.test(poidstaille)
+# fonction de Cramer
+cramer = function(table) {
+  test = chisq.test(table)
+  chi2 = as.numeric(test$statistic)
+  n = sum(table)
+  c = length(table[1, ])
+  r = length(table[, 1])
+  m = min(c, r)
+  V = sqrt(chi2 / n * (m - 1))
+  return(V)
+}
+# application sur notre exemple
+cramer(poidstaille)
+
+
+
+
+
