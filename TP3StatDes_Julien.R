@@ -20,3 +20,33 @@
 # entre       0,20 et 0,30 relation moyenne
 # au dessus de 0,30 relation forte
 
+##################### TP ################
+### 3.1
+# i, deux f çons de faire
+poidstaille=cbind(c(830,862),c(8615,11183),c(30784,2756),c(4839,2348)) # columns concate
+poidstaille=rbind(c(830,8615,30784,4839),c(862,11183,27566,2348)) # rows bind
+# ii, donner des noms aux lignes
+rownames(poidstaille)=c("Garçons","filles")
+# iii, on ajoute les modalités pour les colonnes
+colnames(poidstaille)=c("Faible","Moyen","Elevé","Tr.élv")
+### 3.2
+# i, somme totale des effectifs
+sum(poidstaille)
+# ii, le tableau des fréquences
+frequences = poidstaille/sum(poidstaille)
+# la table des fréquences, on peut l'obtenir avec la commande
+prop.table(poidstaille)
+### 3.3
+# i, La distribution de Y pour les garçons
+poidstaille[1,]
+poidstaille[1,]/sum(poidstaille[1,]) #fréquences par rapport à l'effectif de garçons
+# ii, La distribution de Y pour les filles
+poidstaille[2,]
+poidstaille[2,]/sum(poidstaille[2,]) #fréquences par rapport à l'effectif de filles
+# iii, tracer diagramme en batons
+barplot(poidstaille,main = 'Garçon, Filles', xlab = "nombre", 
+        legend=row.names(poidstaille), beside = TRUE, col=c("darkblue", "red"))
+
+### 3.4
+# i, les marges
+frequences = addmargins(frequences)
